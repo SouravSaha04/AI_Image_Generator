@@ -1,0 +1,28 @@
+<!-- Save as templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Image Generator</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>AI Image Generator</h1>
+    <div class="input-container">
+      <textarea id="prompt" placeholder="Describe your imagination in detail..."></textarea>
+    </div>
+    <div class="button-container">
+      <button class="generate-btn" onclick="generateImage()">Generate</button>
+    </div>
+    <div class="image-container" id="generatedImage">
+      <p class="placeholder-text">Your generated image will appear here</p>
+    </div>
+    <div class="button-container download-container" id="downloadSection" style="display: none;">
+      <button class="download-btn" onclick="downloadImage()">Download</button>
+    </div>
+  </div>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

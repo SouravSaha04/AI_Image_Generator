@@ -1,0 +1,214 @@
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #333333;
+}
+
+.container {
+  background-color:#e2d3eb;
+  border: 3px solid #9344c7;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 600px; /* Increased container width */
+  padding: 30px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 24px;
+  margin: 0 0 20px 0;
+  text-align: center;
+  font-weight:bolder;
+  color:#9344c7 ;
+}
+
+.input-container {
+  width: 100%; /* Takes full width of container */
+  max-width: 550px;/* Specific width for the textarea */
+}
+
+.input-container textarea {
+  width: 100%;
+  height: 120px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  resize: none;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+.input-container textarea::placeholder {
+  color: #999;
+}
+
+.button-container {
+  width: 50%;
+  max-width: 550px; /* Match textarea width */
+  margin-bottom: 25px;
+}
+
+.generate-btn {
+  width: 100%;
+  padding: 15px;
+  background-color: #9344c7;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bolder;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.generate-btn:hover {
+  background-color:#5c1988;
+}
+
+.image-container {
+  width: 256px;
+  height:256px;
+  border: 1px dashed #ccc;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9;
+  overflow: hidden;
+}
+
+.placeholder-text {
+  color: #999;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* When an image is generated */
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.download-container {
+  width: 50%;
+  max-width: 550px;
+  margin-top: 10px;
+}
+
+.download-btn {
+  width: 100%;
+  padding: 14px;
+  background-color: #5c1988;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bolder;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.download-btn:hover {
+  background-color: #3b0f5c;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .container {
+      padding: 20px;
+  }
+  
+  h1 {
+      font-size: 22px;
+  }
+  
+  .input-container textarea {
+      height: 100px;
+      font-size: 15px;
+  }
+  
+  .generate-btn {
+      padding: 12px;
+      font-size: 15px;
+  }
+  
+  .placeholder-text {
+      font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+      padding: 15px;
+      border-radius: 8px;
+  }
+  
+  h1 {
+      font-size: 20px;
+      margin-bottom: 15px;
+  }
+  
+  .input-container textarea {
+      height: 80px;
+      font-size: 14px;
+      padding: 12px;
+      margin-bottom: 15px;
+  }
+  
+  .generate-btn {
+      padding: 10px;
+      font-size: 14px;
+  }
+  
+  .button-container {
+      margin-bottom: 20px;
+  }
+  
+  .placeholder-text {
+      font-size: 14px;
+  }
+}
+
+@media (max-width: 350px) {
+  .container {
+      padding: 12px;
+  }
+  
+  h1 {
+      font-size: 18px;
+  }
+  
+  .input-container textarea {
+      height: 70px;
+      font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .download-btn {
+    font-size: 15px;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .download-btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
