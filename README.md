@@ -1,2 +1,14 @@
 # AI_Image_Generator
-An AI-powered image generator that generates high quality images and commercial logos according to user prompts and demonstrates the potential of Generative AI 
+This is an AI-powered image generation web application built using Flask, Stable Diffusion via Hugging Face Diffusers, and PyTorch. The app allows users to input a prompt generates a 256x256 AI-generated image using a state-of-the-art text-to-image model.
+
+Technology:
+Frontend: HTML, CSS, JS
+Backend: Python, Flask
+ML Model: Hugging Face Diffusers, PyTorch
+Model Used: stabilityai/sdxl-turbo
+Deployment: Docker, Hugging Face Spaces
+
+Features:
+Input text prompt and get a generated image
+Uses the SDXL-Turbo model to generate fast & quality images
+Encodes output as base64 PNG and sends it to frontend
