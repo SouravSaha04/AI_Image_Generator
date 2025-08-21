@@ -1,6 +1,8 @@
 # AI_Image_Generator
 This is an AI-powered image generation web application built using Flask, Stable Diffusion via Hugging Face Diffusers, and PyTorch. The app allows users to input a prompt generates a 256x256 AI-generated image using a state-of-the-art text-to-image model.
 
+Live Link: https://huggingface.co/spaces/SouravSaha26/AI_Image_Generator
+
 Technology:
 Frontend: HTML, CSS, JS
 Backend: Python, Flask
